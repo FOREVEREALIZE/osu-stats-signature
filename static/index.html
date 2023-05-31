@@ -108,6 +108,10 @@
 						<label for="animation">{{$n('动画')}}</label>
 					</div>
 					<div class="option">
+						<input type="checkbox" v-model="lazer" id="lazer"/>
+						<label for="lazer">{{$n('lazer')}}</label>
+					</div>
+					<div class="option">
 						<label style="margin-right: 10px;">{{$n('颜色')}}</label>
 						<input type="range" min="0" max="360" value="333" v-model="color_hue" width="300"/>
 					</div>

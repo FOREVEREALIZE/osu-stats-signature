@@ -35,7 +35,8 @@ const i18n = {
 		'Skills 排名显示': 'Skills Ranking Display',
 		'全球排名': 'Global rank',
 		'国内/区内排名': 'Country rank',
-		'循环显示': 'Cycle both'
+		'循环显示': 'Cycle both',
+		'lazer': 'Lazer'
 	}
 }
 const app = {
@@ -49,6 +50,7 @@ const app = {
 			blur_size: 6,
 			round_avatar: false,
 			animation: true,
+			lazer: false,
 			color_hue: 333,
 			size: {
 				w: 550,
@@ -101,6 +103,9 @@ const app = {
 			}
 			if (this.color_hue != 333){
 				url += `&hue=${this.color_hue}`;
+			}
+			if (this.lazer){
+				url += `&lazer=1`
 			}
 			switch (this.cardmode) {
 				case "full_stats":
